@@ -1,0 +1,293 @@
+:root {
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  --clr-light-slate-blue: hsl(252, 100%, 67%);
+  --clr-light-royal-blue: hsl(241, 81%, 54%);
+  --clr-violet-blue: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--clr-pale-blue);
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 600px;
+    height: 450px;
+    background-color: var(--clr-white);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card .result-profile{
+    width: 300px;
+    height: 450px;
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(234, 85%, 45%));
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.card .result-profile .info-result-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.card .result-profile .info-result-profile #result-heading{
+    color: var(--clr-light-lavender);
+    margin-top: 20px;
+}
+
+.card .result-profile .info-result-profile .info-numbers{
+    border-radius: 50%;
+    background-color: var(--clr-violet-blue);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .result-profile .info-result-profile .info-numbers .larger-number{
+    color: var(--clr-white);
+    font-size: 4rem;
+}
+
+.card .result-profile .info-result-profile .info-numbers .small-number{
+    color: hsla(241, 100%, 89%, 0.6);
+    font-weight: 600;
+}
+
+.card .result-profile .info-result-profile .info-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card .result-profile .info-result-profile .info-footer h2{
+    color: var(--clr-white);
+}
+
+.card .result-profile .info-result-profile .info-footer p{
+    color: var(--clr-light-lavender);
+    text-align: center;
+    max-width: 230px;
+}
+
+.card .summary{
+    width: 300px;
+    height: 450px;
+    background-color: var(--clr-white);
+    border-radius: 30px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card .summary #summary-heading{
+    margin-top: 20px;
+}
+
+.card .summary .summary-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.card .summary .summary-list li{
+    display: flex;
+    gap: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 230px;
+}
+
+.card .summary .summary-list li.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.reaction .info-list{
+    display: flex;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.reaction .info-number{
+    display: flex;
+    gap: 5px;
+}
+
+.card .summary .summary-list li.reaction .info-number .color-number{
+    color: #888;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.card .summary .summary-list li.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.memory .info-list{
+    display: flex;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.memory .info-number{
+    display: flex;
+    gap: 5px;
+}
+
+.card .summary .summary-list li.memory .info-number .color-number{
+    color: #888;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.card .summary .summary-list li.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.verbal .info-list{
+    display: flex;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.verbal .info-number{
+    display: flex;
+    gap: 5px;
+}
+
+.card .summary .summary-list li.verbal .info-number .color-number{
+    color: #888;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.card .summary .summary-list li.visual{
+    background-color: hsl(241, 81%, 54%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.visual .info-list{
+    display: flex;
+    gap: 10px;
+}
+
+.card .summary .summary-list li.visual .info-number{
+    display: flex;
+    gap: 5px;
+}
+
+.card .summary .summary-list li.visual .info-number .color-number{
+    color: #888;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.card .summary .summary-list li .text-reaction{
+    color: hsla(0, 100%, 67%);
+}
+
+.card .summary .summary-list li .text-memory{
+    color: hsl(39, 100%, 56%);
+}
+
+.card .summary .summary-list li .text-verbal{
+    color: hsl(166, 100%, 37%);
+}
+
+.card .summary .summary-list li .text-visual{
+    color: hsl(234, 85%, 45%);
+}
+
+.card .summary .summary-list li .text-number{
+    font-weight: 700;
+}
+
+.card .summary .button-summary{
+    border: none;
+    width: 230px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: var(--clr-white);
+    font-weight: 600;
+}
+
+.card .summary .button-summary:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(234, 85%, 45%));
+}
+
+@media screen and (max-width: 376px){
+    .card{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card .result-profile{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card .result-profile .info-result-profile .info-footer{
+        padding-bottom: 40px;
+    }
+
+    .card .summary{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-bottom: 2.5rem;
+    }
+
+    .card .summary .summary-list{
+        width: auto;
+        flex-direction: column;
+    }
+    
+    .card .summary .button-summary{
+        max-width: 100%; 
+    }
+    
+}
