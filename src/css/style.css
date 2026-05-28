@@ -258,7 +258,7 @@ body{
     background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(234, 85%, 45%));
 }
 
-@media (max-width: 376px){
+@media (max-width: 480px){
     .card{
         flex-direction: column;
         width: 100%;
